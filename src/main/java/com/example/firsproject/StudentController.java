@@ -54,6 +54,7 @@ public class StudentController {
         return studentService.updatecourse(regNo,newCourse);
     }
 
+
     @PutMapping("/updateCourseByPath/{q}/{c}")
     public Student updateCourseByPath(@PathVariable("q") int regNo, @PathVariable("c") String newCourse)
     {
